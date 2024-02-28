@@ -1,4 +1,4 @@
-public abstract class Transport {
+public abstract class Transport implements Maintanable {
     public String modelName;
     public int wheelsCount;
 
@@ -8,6 +8,13 @@ public abstract class Transport {
     }
     public void updateTyre() {
         System.out.println("Меняем покрышку");
+    }
+
+    public void chek(){
+        System.out.println("Обслуживанием " + modelName);
+        for (int i=0; i<wheelsCount; i++){
+            updateTyre();
+        }
     }
 
 

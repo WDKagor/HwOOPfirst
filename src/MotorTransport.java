@@ -6,4 +6,9 @@ public class MotorTransport extends Transport {
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
+
+    public void chek() {
+        super.chek();
+        checkEngine();
+    }
 }
