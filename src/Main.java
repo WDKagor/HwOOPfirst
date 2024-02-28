@@ -9,6 +9,8 @@ public class Main {
         Bicycle bicycle = new Bicycle("Bicycle1", 2);
         Bicycle bicycle2 = new Bicycle("Bicycle2", 2);
 
+        bicycle.updateTyre();
+
 
         ServiceStation station = new ServiceStation();
         station.check(car, null, null);
